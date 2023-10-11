@@ -1,0 +1,1842 @@
+/**Customary styling to all pages start**/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1rem;
+  position: relative;
+}
+
+a{
+  text-decoration: none !important;
+  color: #000;
+}
+/**Customary styling to all pages ends**/
+
+
+/******** Body starts ********/
+
+/****** Header starts ******/
+header{
+    width:100%;
+    padding: 3rem 8% 2rem 8%;
+    background: hsl(217, 28%, 15%);
+}
+
+header nav{
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo{
+    height:35px;
+}
+
+nav ul{
+    width:max-content;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:30px;
+    margin-left:auto;
+}
+
+nav ul li{
+    color:hsl(0, 0%, 100%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav i.fa-navicon{
+    color: #fff;
+    font-size: 1.4rem;
+    margin-left: auto;
+    display: none;
+}
+
+/****** Header ends ******/
+
+
+/******** Hidden Navigation starts ********/
+.menu-nav{
+    position: fixed;
+    top:0;
+    right:0;
+    width:0vw;
+    height: 100vh;
+    background-color: #fff;
+    background-color: hsl(218, 28%, 13%);
+    z-index:9;
+    display: flex;
+    flex-direction: column;
+    transition: 400ms all ease;
+    overflow: hidden;
+    padding:0 !important;
+}
+
+.menu-nav i.fa-times{
+    font-size: 1.4rem;
+    margin: 2rem 8vw 0 auto;
+    color: hsl(218, 28%, 13%);
+    color:#fff;
+}
+
+.menu-nav ul{
+    width:max-content;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 8vw 0 8vw;
+}
+
+.menu-nav ul li{
+    color: hsl(218, 28%, 13%);
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+/******** Hidden Navigation ends ********/
+
+
+/****** Showcase starts *****/
+.showcase{
+    width: 100%;
+    padding: 0 8% 2rem 8%;
+    background-color: hsl(217, 28%, 15%);
+    position: relative;
+   /* background-image: url(../images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.showcase img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.showcase .showcase-texts{
+    max-width: 50%;
+    margin: 30px auto 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.showcase-texts h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.showcase-texts h3{
+    max-width: 85%;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    margin:30px auto 0 auto;
+}
+
+
+.showcase button{
+    display: block;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 20px auto 0 auto;
+    border: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.showcase .curve-bg{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    z-index: 1;
+}
+
+.curve-bg-1{
+    display: block;
+}
+
+.curve-bg-2{
+    display: none;
+}
+
+.showcase .space{
+    display: none;
+}
+/****** Showcase ends *****/
+
+
+/**** Main starts ******/
+main{
+    width: 100%;
+    padding: 5rem 8%  2rem 8%;
+    background-color: hsl(218, 28%, 13%);
+    position: relative;
+}
+
+main ul{
+    position: relative;
+    min-width:84%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:30px;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+main ul li{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.main-item img{
+    display: block;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.main-item h2{
+    color: #fff;
+    font-family: 'Raleway' , sans-serif;
+    font-size:1.3rem;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-item h4{
+    max-width: 90%;
+    color: #fff;
+    font-family: 'Open Sans' , sans-serif;
+    font-size:0.85rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 15px;
+    text-align: center;
+}
+
+main .submain{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+}
+
+.submain img{
+    width: 50%;
+}
+
+.submain .submain-texts{
+    width: 50%;
+    padding: 2rem 0 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.submain-texts h2{
+    max-width: 60%;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.submain-texts p{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+
+.submain-texts .to-action{
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:hsl(176, 68%, 64%);
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 0.85rem;
+    border-bottom: 2px solid hsl(176, 68%, 64%) ;
+    margin-top:20px;
+}
+
+.to-action img{
+    height: 18px;
+    width:18px;
+    margin-left:10px;
+}
+/**** Main ends ******/
+
+/****** Testimonials starts ******/
+.testimonials{
+    width: 100%;
+    padding: 8rem 8% 2rem 8%;
+    background-color: hsl(218, 28%, 13%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:15px;
+}
+
+.testimonials .testimonial{
+    width: 31%;
+    padding: 2.5rem 2rem 1.5rem 2rem;
+    background-color: hsl(219, 30%, 18%);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 8px 6px 8px 6px hsl(217, 28%, 15%);
+}
+
+.testimonial p{
+    color: #fff;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.testimonial .profile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.profile img{
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.profile .details{
+    width: 100%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details .name{
+    color: #fff;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.details .position{
+    color: #fff;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+
+.testimonial .quotes{
+    position:absolute;
+    width: 50px;
+    top:0;
+    left:0;
+    transform: translate(-20px , -100%);
+}
+/****** Testimonials ends ******/
+
+
+/****** Email Sign Up starts *****/
+.email-signup{
+    width: 100%;
+    padding: 2rem 8% 0 8%;
+    background-color: hsl(218, 28%, 13%);
+}
+
+.email-signup .email-signup-main{
+    width: 70%;
+    padding: 2rem 4rem;
+    border-radius: 18px;
+    margin: auto auto 0 auto;
+    background-color: hsl(217, 28%, 15%);
+    transform: translateY(50%);
+    box-shadow: 3px 7px 7px 3px rgba(0,0,0, 0.2);
+}
+
+.email-signup-main h2{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    margin:0 auto;
+}
+
+.email-signup-main p{
+    color: #fff;
+    max-width: 80%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    margin:15px auto 0 auto;
+}
+
+.email-signup-main form{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.email-signup-main form input#email{
+    width: 65%;
+    height:40px;
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 0 12px 30px;
+    outline: 0;
+}
+
+.email-signup-main form input#email::placeholder{
+    color: #666;
+    font-size: 0.7rem;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 400;
+}
+
+.email-signup form button{
+    width:25%;
+    margin-left: auto;
+    height:40px;
+    border: 0;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    border: 0;
+}
+/****** Email Sign Up ends *****/
+
+
+/****** Footer starts ******/
+footer{
+    width:100%;
+    padding: 12rem 5% 5rem 8%;
+    background-color: hsl(216, 53%, 9%);
+    display: flex;
+    flex-direction: column;
+}
+
+footer .logo{
+    height:40px;
+    width: max-content;
+}
+
+footer .footer-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap:20px;
+    margin-top:25px;
+}
+
+.footer-info .location{
+    width:33%;
+    display: flex;
+    flex-direction: row;
+    padding-right: 1rem;
+}
+
+.footer-info .location img{
+    height:15px;
+}
+
+.footer-info .location p{
+    color: #fff;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.footer-info .contact{
+    width: 20%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info .contact li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact li img{
+    height:15px;
+}
+
+.contact li span{
+    color:#fff;
+    margin-left: 15px;
+    font-family: 'Open Sans';
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.footer-info .textlinks{
+    width:27%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.textlinks li{
+    width: 50%;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: 13px;
+}
+
+.footer-info .footer-icons{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer-icons .icon{
+    height: 35px;
+    width: 35px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    padding:0.5rem;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons .icon i.fa{
+    color: #fff;
+    font-size:0.9rem;
+}
+
+/****** Footer ends ******/
+
+/******** Body ends ********/
+
+
+/*** MD-query ***/
+@media (max-width: 1100px) {
+    /****** Showcase starts *****/
+    .showcase{
+        width: 100%;
+        padding: 0 8% 2rem 8%;
+        background-color: hsl(217, 28%, 15%);
+    /* background-image: url(../images/bg-curvy-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;*/
+    }
+
+    .showcase img{
+        display: block;
+        width: 65%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .showcase .showcase-texts{
+        max-width: 65%;
+        margin: 30px auto 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .showcase-texts h1{
+        color: hsl(0, 0%, 100%);
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .showcase-texts h3{
+        max-width: 85%;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        margin:30px auto 0 auto;
+    }
+
+
+    .showcase button{
+        display: block;
+        width: 180px;
+        height: 40px;
+        border-radius: 20px;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        margin: 20px auto 0 auto;
+        border: 0;
+        position: relative;
+        z-index: 2;
+    }
+/****** Showcase ends *****/
+
+/**** Main starts ******/
+    main{
+        width: 100%;
+        padding: 5rem 8%  2rem 8%;
+        background-color: hsl(218, 28%, 13%);
+        position: relative;
+    }
+
+    main ul{
+        position: relative;
+        min-width:100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap:20px;
+        z-index: 2;
+        margin: 0 auto;
+    }
+
+    main ul li{
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .main-item img{
+        display: block;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .main-item h2{
+        color: #fff;
+        font-family: 'Raleway' , sans-serif;
+        font-size:1.3rem;
+        font-weight: 700;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .main-item h4{
+        max-width: 90%;
+        color: #fff;
+        font-family: 'Open Sans' , sans-serif;
+        font-size:0.85rem;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    main .submain{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        z-index: 2;
+        margin-top: 100px;
+    }
+
+    .submain img{
+        width: 50%;
+    }
+
+    .submain .submain-texts{
+        width: 50%;
+        padding: 2rem 0 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .submain-texts h2{
+        max-width: 60%;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 1.6;
+    }
+
+    .submain-texts p{
+        color: hsl(0, 0%, 100%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+
+    .submain-texts .to-action{
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color:hsl(176, 68%, 64%);
+        font-family: 'Open Sans' , sans-serif;
+        font-size: 0.85rem;
+        border-bottom: 2px solid hsl(176, 68%, 64%) ;
+        margin-top:20px;
+    }
+
+    .to-action img{
+        height: 18px;
+        width:18px;
+        margin-left:10px;
+    }
+/**** Main ends ******/
+
+/****** Email Sign Up starts *****/
+    .email-signup{
+        width: 100%;
+        padding: 2rem 8% 0 8%;
+        background-color: hsl(218, 28%, 13%);
+    }
+
+    .email-signup .email-signup-main{
+        width: 100%;
+        padding: 2rem 4rem;
+        border-radius: 18px;
+        margin: auto auto 0 auto;
+        background-color: hsl(217, 28%, 15%);
+        transform: translateY(50%);
+        box-shadow: 3px 7px 7px 3px rgba(0,0,0, 0.2);
+    }
+
+    .email-signup-main h2{
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        margin:0 auto;
+    }
+
+    .email-signup-main p{
+        color: #fff;
+        max-width: 80%;
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 400;
+        line-height: 1.4;
+        text-align: center;
+        margin:15px auto 0 auto;
+    }
+
+    .email-signup-main form{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .email-signup-main form input#email{
+        width: 65%;
+        height:40px;
+        border: 0;
+        border-radius: 20px;
+        padding: 12px 0 12px 30px;
+        outline: 0;
+    }
+
+    .email-signup-main form input#email::placeholder{
+        color: #666;
+        font-size: 0.7rem;
+        font-family: 'Open Sans' , sans-serif;
+        font-weight: 400;
+    }
+
+    .email-signup form button{
+        width:25%;
+        margin-left: auto;
+        height:40px;
+        border: 0;
+        border-radius: 20px;
+        background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 0.75rem;
+        border: 0;
+    }
+/****** Email Sign Up ends *****/
+
+}
+
+@media (max-width:950px) {
+    /****** Showcase starts *****/
+    .showcase{
+        width: 100%;
+        padding: 0 8% 2rem 8%;
+        background-color: hsl(217, 28%, 15%);
+    /* background-image: url(../images/bg-curvy-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;*/
+    }
+
+    .showcase img{
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .showcase .showcase-texts{
+        max-width: 70%;
+        margin: 30px auto 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .showcase-texts h1{
+        color: hsl(0, 0%, 100%);
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .showcase-texts h3{
+        max-width: 85%;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        margin:30px auto 0 auto;
+    }
+
+
+    .showcase button{
+        display: block;
+        width: 180px;
+        height: 40px;
+        border-radius: 20px;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        margin: 20px auto 0 auto;
+        border: 0;
+        position: relative;
+        z-index: 2;
+    }
+/****** Showcase ends *****/
+
+/**** Main starts ******/
+    main{
+        width: 100%;
+        padding: 5rem 8%  2rem 8%;
+        background-color: hsl(218, 28%, 13%);
+        position: relative;
+    }
+
+    main ul{
+        position: relative;
+        min-width:100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap:20px;
+        z-index: 2;
+        margin: 0 auto;
+    }
+
+    main ul li{
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .main-item img{
+        display: block;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .main-item h2{
+        color: #fff;
+        font-family: 'Raleway' , sans-serif;
+        font-size:1.3rem;
+        font-weight: 700;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .main-item h4{
+        max-width: 90%;
+        color: #fff;
+        font-family: 'Open Sans' , sans-serif;
+        font-size:0.85rem;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    main .submain{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 2;
+        margin-top: 100px;
+    }
+
+    .submain img{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .submain .submain-texts{
+        width: 100%;
+        padding: 3rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .submain-texts h2{
+        max-width: 100%;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.6;
+    }
+
+    .submain-texts p{
+        color: hsl(0, 0%, 100%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.95rem;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+
+    .submain-texts .to-action{
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color:hsl(176, 68%, 64%);
+        font-family: 'Open Sans' , sans-serif;
+        font-size: 1rem;
+        border-bottom: 2px solid hsl(176, 68%, 64%) ;
+        margin-top:20px;
+    }
+
+    .to-action img{
+        height: 20px;
+        width:20px;
+        margin-left:10px;
+    }
+/**** Main ends ******/
+
+/****** Testimonials starts ******/
+    .testimonials{
+        width: 100%;
+        padding: 6rem 8% 1rem 8%;
+        background-color: hsl(218, 28%, 13%);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:15px;
+    }
+
+    .testimonials .testimonial{
+        width: 48%;
+        padding: 2.5rem 2rem 1.5rem 2rem;
+        background-color: hsl(219, 30%, 18%);
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 6px 4px 6px 4px hsl(217, 28%, 15%);
+    }
+
+    .testimonial p{
+        color: #fff;
+        font-family: 'Open Sans' , sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .testimonial .profile{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .profile img{
+        height:45px;
+        width: 45px;
+        border-radius: 50%;
+    }
+
+    .profile .details{
+        width: 100%;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .details .name{
+        color: #fff;
+        font-family: 'Open Sans' , sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .details .position{
+        color: #fff;
+        font-family: 'Open Sans' , sans-serif;
+        font-size: 0.85rem;
+        font-weight: 400;
+        line-height: 1;
+        margin-top: 5px;
+    }
+
+
+    .testimonial .quotes{
+        position:absolute;
+        width: 50px;
+        top:0;
+        left:0;
+        transform: translate(-20px , -100%);
+    }
+/****** Testimonials ends ******/
+
+/****** Email Sign Up starts *****/
+    .email-signup{
+        width: 100%;
+        padding: 1rem 8% 0 8%;
+        background-color: hsl(218, 28%, 13%);
+    }
+
+    .email-signup .email-signup-main{
+        width: 100%;
+        padding: 2.5rem 2rem;
+        border-radius: 18px;
+        margin: auto auto 0 auto;
+        background-color: hsl(217, 28%, 15%);
+        transform: translateY(50%);
+        box-shadow: 3px 7px 7px 3px rgba(0,0,0, 0.2);
+    }
+
+    .email-signup-main h2{
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.9rem;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        margin:0 auto;
+    }
+
+    .email-signup-main p{
+        color: #fff;
+        max-width: 90%;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.4;
+        text-align: center;
+        margin:15px auto 0 auto;
+    }
+
+    .email-signup-main form{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .email-signup-main form input#email{
+        width: 60%;
+        height:40px;
+        border: 0;
+        border-radius: 20px;
+        padding: 12px 0 12px 30px;
+        outline: 0;
+    }
+
+    .email-signup-main form input#email::placeholder{
+        color: #666;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    .email-signup form button{
+        width:35%;
+        margin-left: auto;
+        height:40px;
+        border: 0;
+        border-radius: 20px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.8rem;
+        border: 0;
+    }
+/****** Email Sign Up ends *****/
+
+/****** Footer starts ******/
+    footer{
+        width:100%;
+        padding: 12rem 5% 5rem 8%;
+        background-color: hsl(216, 53%, 9%);
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .logo{
+        height:40px;
+        width: max-content;
+    }
+
+    footer .footer-info{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: auto;
+        gap:30px;
+        margin-top:40px;
+    }
+
+    .footer-info .location{
+        width:45%;
+        display: flex;
+        flex-direction: row;
+        padding-right: 1rem;
+    }
+
+    .footer-info .location img{
+        height:15px;
+    }
+
+    .footer-info .location p{
+        color: #fff;
+        margin-left: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+    .footer-info .contact{
+        width: 45%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-info .contact li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .contact li img{
+        height:20px;
+    }
+
+    .contact li span{
+        color:#fff;
+        margin-left: 15px;
+        font-family: 'Open Sans';
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .footer-info .textlinks{
+        width:45%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .textlinks li{
+        width: 50%;
+        color: #fff;
+        font-family: 'Open Sans';
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        padding-bottom: 17px;
+    }
+
+    .footer-info .footer-icons{
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .footer-icons .icon{
+        height: 35px;
+        width: 35px;
+        border:1px solid #fff;
+        border-radius: 50%;
+        padding:0.5rem;
+        margin-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-icons .icon:first-child{
+        margin-left: 0;
+    }
+
+    .footer-icons .icon i.fa{
+        color: #fff;
+        font-size:0.9rem;
+    }
+
+/****** Footer ends ******/
+}
+
+@media (max-width:900px) {
+    .curve-bg-1{
+        transform: translateY(-250px);
+    }
+
+    .showcase .space{
+        display: block;
+        position: absolute;
+        bottom:0;
+        left:0;
+        width: 100%;
+        height:250px;
+        z-index: 1;
+        background-color: hsl(218, 28%, 13%);
+    }
+}
+
+@media (max-width: 600px) {
+    /****** Header starts ******/
+    header{
+        width:100%;
+        padding: 2rem 8% 2rem 8%;
+        background: hsl(217, 28%, 15%);
+    }
+
+    header nav{
+        width:100%;
+        display: flex;
+        align-items: center;
+    }
+
+    nav .logo{
+        height:30px;
+    }
+
+    nav ul{
+        width:max-content;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:30px;
+        margin-left:auto;
+        display: none;
+    }
+
+    nav ul li{
+        color:hsl(0, 0%, 100%);
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    nav i.fa-navicon{
+        display: block;
+    }
+
+    /****** Header ends ******/
+
+    /****** Showcase starts *****/
+    .showcase{
+        width: 100%;
+        padding: 0 8% 2rem 8%;
+        background-color: hsl(217, 28%, 15%);
+    /* background-image: url(../images/bg-curvy-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;*/
+    }
+
+    .showcase img{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .showcase .showcase-texts{
+        max-width: 100%;
+        margin: 30px auto 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .showcase-texts h1{
+        color: hsl(0, 0%, 100%);
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .showcase-texts h3{
+        max-width: 100%;
+        color: hsl(0, 0%, 100%);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        margin:20px auto 0 auto;
+    }
+
+
+    .showcase button{
+        display: block;
+        width: 80%;
+        height: 40px;
+        border-radius: 20px;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        margin: 20px auto 0 auto;
+        border: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    .curve-bg-1{
+        display: none;
+    }
+
+    .curve-bg-2{
+        display: block;
+        transform: translateY(-250px);
+    }
+
+    .showcase .space{
+        display: block;
+        position: absolute;
+        bottom:0;
+        left:0;
+        width: 100%;
+        height:250px;
+        z-index: 1;
+        background-color: hsl(218, 28%, 13%);
+    }
+/****** Showcase ends *****/
+
+/**** Main starts ******/
+    main{
+        width: 100%;
+        padding: 5rem 8%  2rem 8%;
+        background-color: hsl(218, 28%, 13%);
+        position: relative;
+    }
+
+    main ul{
+        position: relative;
+        min-width:100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap:20px;
+        z-index: 2;
+        margin: 0 auto;
+    }
+
+    main ul li{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .main-item img{
+        display: block;
+        height: 75px;
+        margin: 0 auto;
+    }
+
+    .main-item h2{
+        color: #fff;
+        font-family: 'Raleway' , sans-serif;
+        font-size:1.4rem;
+        font-weight: 700;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .main-item h4{
+        max-width: 90%;
+        color: #fff;
+        font-family: 'Open Sans' , sans-serif;
+        font-size:0.95rem;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    main .submain{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 2;
+        margin-top: 40px;
+    }
+
+    .submain img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .submain .submain-texts{
+        width: 100%;
+        padding: 3rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .submain-texts h2{
+        max-width: 100%;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    .submain-texts p{
+        color: hsl(0, 0%, 100%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.95rem;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+
+    .submain-texts .to-action{
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color:hsl(176, 68%, 64%);
+        font-family: 'Open Sans' , sans-serif;
+        font-size: 1rem;
+        border-bottom: 2px solid hsl(176, 68%, 64%) ;
+        margin-top:20px;
+    }
+
+    .to-action img{
+        height: 20px;
+        width:20px;
+        margin-left:10px;
+    }
+/**** Main ends ******/
+
+/****** Testimonials starts ******/
+    .testimonials{
+        width: 100%;
+        padding: 4rem 8% 1rem 8%;
+        background-color: hsl(218, 28%, 13%);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap:15px;
+    }
+
+    .testimonials .testimonial{
+        width: 90%;
+        padding: 2.5rem 2rem 1.5rem 2rem;
+        background-color: hsl(219, 30%, 18%);
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 4px 2px 4px 2px hsl(217, 28%, 15%);
+        margin-bottom: 20px;
+    }
+
+    .testimonial p{
+        color: #fff;
+        font-family: 'Open Sans' , sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .testimonial .profile{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .profile img{
+        height:45px;
+        width: 45px;
+        border-radius: 50%;
+    }
+
+    .profile .details{
+        width: 100%;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .details .name{
+        color: #fff;
+        font-family: 'Open Sans' , sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .details .position{
+        color: #fff;
+        font-family: 'Open Sans' , sans-serif;
+        font-size: 0.85rem;
+        font-weight: 400;
+        line-height: 1;
+        margin-top: 5px;
+    }
+
+
+    .testimonial .quotes{
+        position:absolute;
+        width: 50px;
+        top:0;
+        left:0;
+        transform: translate(-20px , -100%);
+    }
+/****** Testimonials ends ******/
+
+/****** Email Sign Up starts *****/
+    .email-signup{
+        width: 100%;
+        padding: 1rem 8% 0 8%;
+        background-color: hsl(218, 28%, 13%);
+    }
+
+    .email-signup .email-signup-main{
+        width: 100%;
+        padding: 2.5rem 2rem;
+        border-radius: 12px;
+        margin: 0;
+        background-color: hsl(217, 28%, 15%);
+        transform: translateY(20%);
+        box-shadow: 2px 4px 4px 2px rgba(0,0,0, 0.2);
+    }
+
+    .email-signup-main h2{
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.9rem;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        margin:0 auto;
+    }
+
+    .email-signup-main p{
+        color: #fff;
+        max-width: 100%;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.4;
+        text-align: center;
+        margin:15px auto 0 auto;
+    }
+
+    .email-signup-main form{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .email-signup-main form input#email{
+        width: 100%;
+        height:50px;
+        border: 0;
+        border-radius: 25px;
+        padding: 9px 0 9px 20px;
+        outline: 0;
+    }
+
+    .email-signup-main form input#email::placeholder{
+        color: #666;
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    .email-signup form button{
+        width:100%;
+        margin-left: 0;
+        height:50px;
+        border: 0;
+        border-radius: 25px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1rem;
+        border: 0;
+        margin-top: 25px;
+    }
+/****** Email Sign Up ends *****/
+
+/****** Footer starts ******/
+    footer{
+        width:100%;
+        padding: 9rem 5% 5rem 8%;
+        background-color: hsl(216, 53%, 9%);
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .logo{
+        height:35px;
+        width: max-content;
+    }
+
+    footer .footer-info{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: auto;
+        gap:0;
+        margin-top:40px;
+    }
+
+    .footer-info .location{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        padding-right: 1rem;
+    }
+
+    .footer-info .location img{
+        height:15px;
+    }
+
+    .footer-info .location p{
+        color: #fff;
+        margin-left: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.3;
+        transform: translateY(-10px);
+    }
+
+    .footer-info .contact{
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .footer-info .contact li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .contact li img{
+        height:17px;
+    }
+
+    .contact li span{
+        color:#fff;
+        margin-left: 15px;
+        font-family: 'Open Sans';
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .footer-info .textlinks{
+        width:100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 35px;
+    }
+
+    .textlinks li{
+        width: 50%;
+        color: #fff;
+        font-family: 'Open Sans';
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        padding-bottom: 17px;
+    }
+
+    .footer-info .footer-icons{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .footer-icons .icon{
+        height: 35px;
+        width: 35px;
+        border:1px solid #fff;
+        border-radius: 50%;
+        padding:0.5rem;
+        margin-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-icons .icon:first-child{
+        margin-left: 0;
+    }
+
+    .footer-icons .icon i.fa{
+        color: #fff;
+        font-size:0.9rem;
+    }
+    
+/****** Footer ends ******/
+}
+
+/*** MD-query ***/
+
+
+@media (max-width:200px) {
+    :root{
+        font-size: 80%;
+    }
+}
+
+/********* Media query starts for curved bg **********/
+@media (max-width:350px) {
+    .curve-bg-2{
+        transform: translateY(-280px);
+    }
+
+    .showcase .space{
+        height:280px;
+    }
+}
+/********* Media query for curved bg ends **********/
